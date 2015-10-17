@@ -1,0 +1,30 @@
+.navbar-default {
+  margin: 0;
+  z-index: 10;
+
+  .navbar-brand {
+    padding: 0 20px 0 20px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+
+    >li {
+      float: none;
+      display: inline-block;
+      text-align: center;
+      width: percentage((1 / 8));
+
+      &:first-child a {
+        padding: 0;
+      }
+    }
+
+    > li > a {
+      text-transform: uppercase;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

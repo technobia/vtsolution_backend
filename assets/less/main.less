@@ -1,0 +1,34 @@
+//bootstrap
+@import '/node_modules/font-awesome/less/font-awesome';
+@import '/node_modules/bootstrap/less/bootstrap';
+@import 'variables/variable-bootstrap';
+@import 'variables/variable-fontawesome';
+@import 'color';
+@import 'mixin/styles';
+
+//admin
+@import '/vendor/bootstrap-admin/less/sb-admin-2';
+@import '/vendor/bootstrap-admin/less/variables.less';
+
+//app
+@import 'dashboard/header';
+@import 'dashboard/index';
+@import 'dashboard/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+.padding-none {
+  padding: 0 !important;
+}
+
+.margin-none {
+  margin: 0 !important;
+}

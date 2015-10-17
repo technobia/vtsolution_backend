@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>angular framework (dev)</title>
+    <!--start css-->
+    <link href="/build/css/angularjs-framework.min.css" type="text/css" rel="stylesheet">
+    <!--end css-->
+
+    <!--start js-->
+    <script src="/app/services/loadScript.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!--end js-->
+</head>
+<body ng-app="AngularApp">
+    <div ng-view></div>
+
+    <script src="/app/app.js"></script>
+    <!--directives-->
+    <script src="/app/directives/carouselHeight.js"></script>
+    <!--services-->
+    <script src="/app/services/RestAPI.js"></script>
+    <script src="/app/services/Guid.js"></script>
+    <!--controller-->
+    <script src="/app/controllers/LoginController.js"></script>
+    <script src="/app/controllers/RegisterController.js"></script>
+</body>
+</html>
