@@ -3,7 +3,7 @@
  */
 module.exports = function(grunt) {
     grunt.registerTask('deploy', [
-        'build',
+        'build:dev',
         'concurrent:deploy'
     ]);
 };
