@@ -34,11 +34,5 @@ require.config({
         }
     },
     'deps': ['main', 'angular', 'angular-route', 'jquery', 'bootstrap'],
-    'callback': function() {
-        require(['main']);
-    },
-    'include': [
-        'angular', 'angular-route', 'jquery', 'bootstrap', 'main', 'config', 'app',
-        'controllers/IndexController'
-    ]
+    'include': ['angular', 'angular-route', 'jquery', 'bootstrap']
 });

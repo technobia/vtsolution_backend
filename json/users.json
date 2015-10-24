@@ -1,0 +1,14 @@
+{
+    "c98111e2-b28c-0513-9149-64c3c5c22114": {
+        "id": "c98111e2-b28c-0513-9149-64c3c5c22114",
+        "username": "admin",
+        "password": "123456",
+        "level": "admin"
+    },
+    "b3056e5c-c4c8-5c4c-a6cb-469eb9c750ef": {
+        "id": "b3056e5c-c4c8-5c4c-a6cb-469eb9c750ef",
+        "username": "user",
+        "password": "123456",
+        "level": "user"
+    }
+}

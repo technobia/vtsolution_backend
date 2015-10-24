@@ -1,10 +1,13 @@
 /**
  * Created by apium on 01/08/2015.
  */
-define(['config',
-        'controllers/IndexController'],
+define([
+        'config',
+        'controllers/IndexController',
+        'services/Guid'
+    ],
     function(
-        config, IndexController
+        config, IndexController, Guid
     ) {
         'use strict';
 
@@ -14,4 +17,5 @@ define(['config',
 
         app.config(config);
         app.controller('IndexController', IndexController);
+        app.factory('Guid', Guid);
     });
