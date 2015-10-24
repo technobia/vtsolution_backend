@@ -1,1 +1,37 @@
-<div ng-controller="IndexController" ng-init="event.onLoad()">index</div>
+<div ng-controller="IndexController" ng-init="event.onLoad()">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Welcome to administrator</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control"
+                                           placeholder="username"
+                                           name="username"
+                                           type="text"
+                                           autofocus>
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control"
+                                           placeholder="Password"
+                                           name="password"
+                                           type="password">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-lg btn-success btn-block">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
