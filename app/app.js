@@ -4,10 +4,11 @@
 define([
         'config',
         'controllers/IndexController',
-        'services/Guid'
+        'services/Guid',
+        'services/AuthService'
     ],
     function(
-        config, IndexController, Guid
+        config, IndexController, Guid, AuthService
     ) {
         'use strict';
 
@@ -18,4 +19,5 @@ define([
         app.config(config);
         app.controller('IndexController', IndexController);
         app.factory('Guid', Guid);
+        app.factory('AuthService', AuthService);
     });
