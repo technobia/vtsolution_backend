@@ -1,1 +1,6 @@
-## This Framework using Angular, NoteJS, RequieJS, LESS, Grunt, Json Data.
+### This Framework using.
+```
+Angular
+NoteJS
+RequieJSLESS, Grunt, Json Data
+```
