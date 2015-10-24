@@ -1,25 +1,19 @@
 /**
  * Created by apium on 22/08/2015.
  */
-function LoginController($scope, RestAPI, Guid) {
-    this.data = $scope.data = {};
-    this.fn = $scope.fn = {};
-    this.event = $scope.event = {};
+define(function(require) {
+    'use strict';
 
-    this.guid = Guid;
-    this.restAPI = RestAPI;
+    function LoginController($scope) {
+        this.data = $scope.data = {};
+        this.event = $scope.event = {};
 
-    this.event.onLoad = this.onLoad.bind(this);
+        this.event.onLoad = this.onLoad.bind(this);
+    }
 
-    return this;
-}
+    LoginController.prototype.onLoad = function() {
 
-LoginController.prototype.onLoad = function() {
-    this.initData();
-};
+    };
 
-LoginController.prototype.initData = function() {
-    this.data.id = this.guid;
-};
-
-app.controller('LoginController', LoginController);
+    return LoginController;
+});

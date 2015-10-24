@@ -3,12 +3,13 @@
  */
 define([
         'config',
-        'controllers/IndexController',
         'services/Guid',
-        'services/AuthService'
+        'services/AuthService',
+        'controllers/IndexController',
+        'controllers/LoginController'
     ],
     function(
-        config, IndexController, Guid, AuthService
+        config, Guid, AuthService, IndexController, LoginController
     ) {
         'use strict';
 
@@ -18,6 +19,12 @@ define([
 
         app.config(config);
         app.controller('IndexController', IndexController);
+        app.controller('LoginController', LoginController);
         app.factory('Guid', Guid);
         app.factory('AuthService', AuthService);
+        app.run(function(AuthService, $location) {
+            if(!AuthService.isAuthenticated()) {
+                $location.path('/login');
+            }
+        });
     });
