@@ -2,5 +2,8 @@
 ```
 Angular
 NoteJS
-RequieJSLESS, Grunt, Json Data
+RequieJS
+LESS
+Grunt
+Json Data
 ```
