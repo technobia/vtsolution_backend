@@ -1,16 +1,10 @@
 /**
  * Created by THANH BINH on 10/17/2015.
  */
-define([
-    'jquery',
-    'angular'
-], function(
-    // Dependency objects
-    ){
+require(['app'],
+    function() {
+        'use strict';
 
-    function angular() {
-        // Can use the dependency objects received above
+        angular.bootstrap(document, ['vtsolutionBackend']);
     }
-
-    return angular;
-});
+);

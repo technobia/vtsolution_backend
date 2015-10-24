@@ -1,31 +1,17 @@
 /**
  * Created by apium on 01/08/2015.
  */
+define(['config',
+        'controllers/IndexController'],
+    function(
+        config, IndexController
+    ) {
+        'use strict';
 
-function AngularConfig($routeProvider, $locationProvider) {
+        var app = angular.module('vtsolutionBackend', [
+            'ngRoute'
+        ]);
 
-    $locationProvider.html5Mode({
-        enabled: false,
-        requireBase: true
+        app.config(config);
+        app.controller('IndexController', IndexController);
     });
-
-    $routeProvider
-        .when('/', {
-            templateUrl: '/templates/login.html'
-        })
-        .when('/register', {
-            templateUrl: '/templates/register.html'
-        })
-        .otherwise({
-            templateUrl: '/templates/index.html'
-        });
-
-}
-
-var app = angular.module('AngularApp', [
-    'ngRoute',
-    'ui.bootstrap',
-    'ui.bootstrap.tpls'
-]);
-
-app.config(AngularConfig);

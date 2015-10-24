@@ -6,7 +6,5 @@ define([], function() {
 
     }
 
-    IndexController.$inject=['$scope'];
-
     return IndexController;
 });

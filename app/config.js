@@ -2,14 +2,14 @@
  * Created by THANH BINH on 10/17/2015.
  */
 define([], function() {
-    function Config($routeProvider, $locationProvider) {
+    function config($routeProvider, $locationProvider) {
         $locationProvider.html5Mode({
             enabled: false,
             requireBase: true
         });
 
         $routeProvider
-            .when('/', {
+            .when('/login', {
                 templateUrl: '/templates/login.html'
             })
             .when('/register', {
@@ -20,7 +20,7 @@ define([], function() {
             });
     }
 
-    Config.$inject = ['$routeProvider', '$locationProvider'];
+    config.$inject = ['$routeProvider', '$locationProvider'];
 
-    return Config;
+    return config;
 });
